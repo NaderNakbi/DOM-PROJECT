@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title> Schneider</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='shopping.css'>
+ 
+    <link rel="icon" href="icone.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">  
+</head>
+<body>
+   <header>
+    <img src="SE_logo-LIO-white_header.svg" alt="error">
+    
+
+
+    <ul class="menu">
+      <div class="parent">
+        <span id="number" class="number">0</span>
+       <i onclick="show1()" class="fa-solid fa-basket-shopping icon"></i>
+        <div id="dropdown" class="dropdown">
+  
+    </div>
+  </div>
+        <li> <a href="projet.html">Home</a></li>
+        <li> <a href="#Logout">Logout</a><i class="fa-solid fa-arrow-right-from-bracket"></i></li>
+    </ul>
+    
+   </header> 
+   <section class="Product-list-wrapper">
+   <div class="left">
+    <div><i class="fa-solid fa-filter"></i>  Filter</div>
+   
+    <p class="gap">Type</p>
+    <form class="gap" action="" class="race" id="myBtnContainer">
+       <div><input class="btn active" onclick="filterSelection('all')" type="checkbox" name="" id="">
+        <label for="">Afficher tout</label></div>
+        <div><input class="btn" onclick="filterSelection('Disjoncteur')" type="checkbox" name="" id="">
+            <label for="">Disjoncteur Moteur</label></div>
+        <div><input class="btn" onclick="filterSelection('Contacteur')" type="checkbox" name="" id="">
+            <label for="">Contacteur</label></div>
+        <div><input class="btn" onclick="filterSelection('Variateur')" type="checkbox" name="" id="">
+            <label for="">Variateur</label></div>
+    </form>
+    
+ </div>
+
+   
+    
+    <div class="cards-list">
+    <div class="card-item Disjoncteur" >
+      <div class="card-img">
+      <img class="green-premium" src="premium.svg" alt="Card image cap">
+      <img class="card-item-img" src="GV2ME08_Image_113x113.PNG" alt="Card image cap">
+    </div>
+      <div class="card-item-body">
+        <h5 class="card-item-type">Disjoncteur Moteur</h5>
+          <span class="card-item-ref">GV2ME08</span> <br>
+          <span class="card-item-Puissance">Puissance:</span> 
+          <span class="card-item-Puissance-value">3Kw</span> <br> 
+          <span class="card-item-prix">prix:</span>
+          <span class="card-item-prix-value">130Dt</span><br>
+        <p class="card-item-text">TeSys GV2ME - disj. moteur - 2,5..4A - 3P 3d - déclencheur magnéto-thermique
+        </p>
+        <button  class="add"><i class="fa-solid fa-cart-shopping"></i>Ajouter au panier</button>
+      
+      </div>
+    </div>
+    <div class="card-item Disjoncteur" >
+      <div class="card-img">
+      <img class="green-premium" src="premium.svg" alt="Card image cap">
+      <img class="card-item-img" src="GV2ME08_Image_113x113.PNG" alt="Card image cap">
+    </div>
+      <div class="card-item-body">
+        <h5 class="card-item-type">Disjoncteur Moteur</h5>
+          <span class="card-item-ref">GV2ME08</span> <br>
+          <span class="card-item-Puissance">Puissance:</span> 
+          <span class="card-item-Puissance-value">3Kw</span> <br> 
+          <span class="card-item-prix">prix:</span>
+          <span class="card-item-prix-value">130Dt</span><br>
+        <p class="card-item-text">TeSys GV2ME - disj. moteur - 2,5..4A - 3P 3d - déclencheur magnéto-thermique
+        </p>
+        <button class="add"><i class="fa-solid fa-cart-shopping"></i>Ajouter au panier</button>
+      
+      </div>
+    </div>
+    <div class="card-item Disjoncteur" >
+      <div class="card-img">
+      <img class="green-premium" src="premium.svg" alt="Card image cap">
+      <img class="card-item-img" src="GV2ME08_Image_113x113.PNG" alt="Card image cap">
+    </div>
+      <div class="card-item-body">
+        <h5 class="card-item-type">Disjoncteur Moteur</h5>
+          <span class="card-item-ref">GV2ME10</span> <br>
+          <span class="card-item-Puissance">Puissance:</span> 
+          <span class="card-item-Puissance-value">4Kw</span> <br> 
+          <span class="card-item-prix">prix:</span>
+          <span class="card-item-prix-value">150Dt</span><br>
+        <p class="card-item-text">TeSys GV2ME - disj. moteur - 4..6,5A - 3P 3d - déclencheur magnéto-thermique
+        </p>
+        <button class="add"><i class="fa-solid fa-cart-shopping"></i>Ajouter au panier</button>
+      
+      </div>
+    </div>
+    <div class="card-item Disjoncteur" >
+      <div class="card-img">
+      <img class="green-premium" src="premium.svg" alt="Card image cap">
+      <img class="card-item-img" src="GV2ME08_Image_113x113.PNG" alt="Card image cap">
+    </div>
+      <div class="card-item-body">
+        <h5 class="card-item-type">Disjoncteur Moteur</h5>
+          <span class="card-item-ref">GV2ME07</span> <br>
+          <span class="card-item-Puissance">Puissance:</span> 
+          <span class="card-item-Puissance-value">2,5Kw</span> <br> 
+          <span class="card-item-prix">prix:</span>
+          <span class="card-item-prix-value">100Dt</span><br>
+        <p class="card-item-text">TeSys GV2ME - disj. moteur - 1,6..2,5A - 3P 3d - déclencheur magnéto-thermique
+        </p>
+        <button class="add"><i class="fa-solid fa-cart-shopping"></i>Ajouter au panier</button>
+      
+      </div>
+    </div>
+    <div class="card-item Disjoncteur" >
+      <div class="card-img">
+      <img class="green-premium" src="premium.svg" alt="Card image cap">
+      <img class="card-item-img" src="GV2ME08_Image_113x113.PNG" alt="Card image cap">
+    </div>
+      <div class="card-item-body">
+        <h5 class="card-item-type">Disjoncteur Moteur</h5>
+          <span class="card-item-ref">GV2ME14</span> <br>
+          <span class="card-item-Puissance">Puissance:</span> 
+          <span class="card-item-Puissance-value">5Kw</span> <br> 
+          <span class="card-item-prix">prix:</span>
+          <span class="card-item-prix-value">200Dt</span><br>
+        <p class="card-item-text">TeSys GV2ME - disj. moteur - 6..10A - 3P 3d - déclencheur magnéto-thermique
+        </p>
+        <button class="add"><i class="fa-solid fa-cart-shopping"></i>Ajouter au panier</button>
+      
+      </div>
+    </div>
+    <div class="card-item Disjoncteur" >
+      <div class="card-img">
+      <img class="green-premium" src="premium.svg" alt="Card image cap">
+      <img class="card-item-img" src="GV2ME08_Image_113x113.PNG" alt="Card image cap">
+    </div>
+      <div class="card-item-body">
+        <h5 class="card-item-type">Disjoncteur Moteur</h5>
+          <span class="card-item-ref">GV2ME06</span> <br>
+          <span class="card-item-Puissance">Puissance:</span> 
+          <span class="card-item-Puissance-value">2Kw</span> <br> 
+          <span class="card-item-prix">prix:</span>
+          <span class="card-item-prix-value">115Dt</span><br>
+        <p class="card-item-text">TeSys GV2ME - disj. moteur - 1..1,6A - 3P 3d - déclencheur magnéto-thermique
+        </p>
+        <button class="add"><i class="fa-solid fa-cart-shopping"></i>Ajouter au panier</button>
+      
+      </div>
+    </div>
+    <div class="card-item Disjoncteur" >
+      <div class="card-img">
+      <img class="green-premium" src="premium.svg" alt="Card image cap">
+      <img class="card-item-img" src="GV2ME08_Image_113x113.PNG" alt="Card image cap">
+    </div>
+      <div class="card-item-body">
+        <h5 class="card-item-type">Disjoncteur Moteur</h5>
+          <span class="card-item-ref">GV2ME16</span> <br>
+          <span class="card-item-Puissance">Puissance:</span> 
+          <span class="card-item-Puissance-value">5Kw</span> <br> 
+          <span class="card-item-prix">prix:</span>
+          <span class="card-item-prix-value">200Dt</span><br>
+        <p class="card-item-text">TeSys GV2ME - disj. moteur - 9..14A - 3P 3d - déclencheur magnéto-thermique
+        </p>
+        <button class="add"><i class="fa-solid fa-cart-shopping"></i>Ajouter au panier</button>
+      
+      </div>
+      
+    </div>
+    <div class="card-item Contacteur" >
+      <div class="card-img">
+      <img class="green-premium" src="premium.svg" alt="Card image cap">
+      <img class="card-item-img" src="PB112188_113x113.PNG" alt="Card image cap">
+    </div>
+      <div class="card-item-body">
+        <h5 class="card-item-type">Contacteur</h5>
+          <span class="card-item-ref">LC1K1201P7</span> <br>
+          <span class="card-item-Puissance">Puissance:</span> 
+          <span class="card-item-Puissance-value">5Kw</span> <br> 
+          <span class="card-item-prix">prix:</span>
+          <span class="card-item-prix-value">200Dt</span><br>
+        <p class="card-item-text">TeSys LC1K - contacteur - 3P - AC-3 440V - 12A - bobine 230Vca
+        </p>
+        <button class="add"><i class="fa-solid fa-cart-shopping"></i>Ajouter au panier</button>
+      
+      </div>
+      
+    </div>
+    <div class="card-item Contacteur" >
+      <div class="card-img">
+      <img class="green-premium" src="premium.svg" alt="Card image cap">
+      <img class="card-item-img" src="PB112188_113x113.PNG" alt="Card image cap">
+    </div>
+      <div class="card-item-body">
+        <h5 class="card-item-type">Contacteur</h5>
+          <span class="card-item-ref">LC1K1201P5</span> <br>
+          <span class="card-item-Puissance">Puissance:</span> 
+          <span class="card-item-Puissance-value">3Kw</span> <br> 
+          <span class="card-item-prix">prix:</span>
+          <span class="card-item-prix-value">160Dt</span><br>
+        <p class="card-item-text">TeSys LC1K- contacteur - 3P - AC-3 440V - 8A - bobine 230Vca
+          <br>
+          <br>
+        </p>
+        <button class="add"><i class="fa-solid fa-cart-shopping"></i>Ajouter au panier</button>
+      
+      </div>
+      
+    </div>
+    <div class="card-item Contacteur" >
+      <div class="card-img">
+      <img class="green-premium" src="premium.svg" alt="Card image cap">
+      <img class="card-item-img" src="PB112188_113x113.PNG" alt="Card image cap">
+    </div>
+      <div class="card-item-body">
+        <h5 class="card-item-type">Contacteur</h5>
+          <span class="card-item-ref">LC1K1201P7</span> <br>
+          <span class="card-item-Puissance">Puissance:</span> 
+          <span class="card-item-Puissance-value">5Kw</span> <br> 
+          <span class="card-item-prix">prix:</span>
+          <span class="card-item-prix-value">200Dt</span><br>
+        <p class="card-item-text">TeSys LC1K - contacteur - 3P - AC-3 440V - 12A - bobine 230Vca
+        </p>
+        <button class="add"><i class="fa-solid fa-cart-shopping"></i>Ajouter au panier</button>
+      
+      </div>
+      
+    </div>
+    <div class="card-item Contacteur" >
+      <div class="card-img">
+      <img class="green-premium" src="premium.svg" alt="Card image cap">
+      <img class="card-item-img" src="PB112188_113x113.PNG" alt="Card image cap">
+    </div>
+      <div class="card-item-body">
+        <h5 class="card-item-type">Contacteur</h5>
+          <span class="card-item-ref">LC1K1201P6</span> <br>
+          <span class="card-item-Puissance">Puissance:</span> 
+          <span class="card-item-Puissance-value">3Kw</span> <br> 
+          <span class="card-item-prix">prix:</span>
+          <span class="card-item-prix-value">160Dt</span><br>
+        <p class="card-item-text">TeSys LC1K - contacteur - 3P - AC-3 440V - 9A - bobine 230Vca
+        </p>
+        <br>
+        <button class="add"><i class="fa-solid fa-cart-shopping"></i>Ajouter au panier</button>
+      
+      </div>
+      
+    </div>
+    <div class="card-item Contacteur" >
+      <div class="card-img">
+      <img class="green-premium" src="premium.svg" alt="Card image cap">
+      <img class="card-item-img" src="PB112188_113x113.PNG" alt="Card image cap">
+    </div>
+      <div class="card-item-body">
+        <h5 class="card-item-type">Contacteur</h5>
+          <span class="card-item-ref">LC1K1201P10</span> <br>
+          <span class="card-item-Puissance">Puissance:</span> 
+          <span class="card-item-Puissance-value">7Kw</span> <br> 
+          <span class="card-item-prix">prix:</span>
+          <span class="card-item-prix-value">300Dt</span><br>
+        <p class="card-item-text">TeSys LC1K - contacteur - 3P - AC-3 440V - 16A - bobine 230Vca
+        </p>
+        <button class="add"><i class="fa-solid fa-cart-shopping"></i>Ajouter au panier</button>
+      
+      </div>
+      
+    </div>
+    <div class="card-item Contacteur" >
+      <div class="card-img">
+      <img class="green-premium" src="premium.svg" alt="Card image cap">
+      <img class="card-item-img" src="PB112188_113x113.PNG" alt="Card image cap">
+    </div>
+      <div class="card-item-body">
+        <h5 class="card-item-type">Contacteur</h5>
+          <span class="card-item-ref">LC1K1201P15</span> <br>
+          <span class="card-item-Puissance">Puissance:</span> 
+          <span class="card-item-Puissance-value">9Kw</span> <br> 
+          <span class="card-item-prix">prix:</span>
+          <span class="card-item-prix-value">200Dt</span><br>
+        <p class="card-item-text">TeSys LC1K - contacteur - 3P - AC-3 440V - 22A - bobine 230Vca
+        </p>
+        <button class="add"><i class="fa-solid fa-cart-shopping"></i>Ajouter au panier</button>
+      
+      </div>
+      
+    </div>
+    <div class="card-item Contacteur" >
+      <div class="card-img">
+      <img class="green-premium" src="premium.svg" alt="Card image cap">
+      <img class="card-item-img" src="PB112188_113x113.PNG" alt="Card image cap">
+    </div>
+      <div class="card-item-body">
+        <h5 class="card-item-type">Contacteur</h5>
+          <span class="card-item-ref">LC1K1201P20</span> <br>
+          <span class="card-item-Puissance">Puissance:</span> 
+          <span class="card-item-Puissance-value">12Kw</span> <br> 
+          <span class="card-item-prix">prix:</span>
+          <span class="card-item-prix-value">200Dt</span><br>
+        <p class="card-item-text">TeSys LC1K - contacteur - 3P - AC-3 440V - 32A - bobine 230Vca
+        </p>
+        <button class="add"><i class="fa-solid fa-cart-shopping"></i>Ajouter au panier</button>
+      
+      </div>
+      
+    </div>
+    <div class="card-item Variateur" >
+      <div class="card-img">
+      <img class="green-premium" src="premium.svg" alt="Card image cap">
+      <img class="card-item-img" src="PF080604_113x113.PNG" alt="Card image cap">
+    </div>
+      <div class="card-item-body">
+        <h5 class="card-item-type">Variateur</h5>
+          <span class="card-item-ref">ATV12H037M2</span> <br>
+          <span class="card-item-Puissance">Puissance:</span> 
+          <span class="card-item-Puissance-value">0,18Kw</span> <br> 
+          <span class="card-item-prix">prix:</span>
+          <span class="card-item-prix-value">700Dt</span><br>
+        <p class="card-item-text">Altivar ATV12 - variateur de vit. - 0,37kW 0,55CV - 200..240V - 1ph - radiateur
+        </p>
+        <button class="add"><i class="fa-solid fa-cart-shopping"></i>Ajouter au panier</button>
+      
+      </div>
+      
+    </div>
+    <div class="card-item Variateur" >
+      <div class="card-img">
+      <img class="green-premium" src="premium.svg" alt="Card image cap">
+      <img class="card-item-img" src="PF080604_113x113.PNG" alt="Card image cap">
+    </div>
+      <div class="card-item-body">
+        <h5 class="card-item-type">Variateur</h5>
+          <span class="card-item-ref">ATV12H018M3</span> <br>
+          <span class="card-item-Puissance">Puissance:</span> 
+          <span class="card-item-Puissance-value">5Kw</span> <br> 
+          <span class="card-item-prix">prix:</span>
+          <span class="card-item-prix-value">200Dt</span><br>
+        <p class="card-item-text">Altivar ATV12 - variateur de vit. - 0,18kW 0,25CV - 200..240V - 3ph - radiateur
+        </p>
+        <button class="add"><i class="fa-solid fa-cart-shopping"></i>Ajouter au panier</button>
+      
+      </div>
+      
+    </div>
+    <div class="card-item Variateur" >
+      <div class="card-img">
+      <img class="green-premium" src="premium.svg" alt="Card image cap">
+      <img class="card-item-img" src="PF080604_113x113.PNG" alt="Card image cap">
+    </div>
+      <div class="card-item-body">
+        <h5 class="card-item-type">Variateur</h5>
+          <span class="card-item-ref">ATV12H037F1</span> <br>
+          <span class="card-item-Puissance">Puissance:</span> 
+          <span class="card-item-Puissance-value">0,37Kw</span> <br> 
+          <span class="card-item-prix">prix:</span>
+          <span class="card-item-prix-value">200Dt</span><br>
+        <p class="card-item-text">Altivar ATV12 - variateur de vit. - 0,37kW 0,55CV - 100..120V - 1ph - radiateur
+        </p>
+        <button class="add"><i class="fa-solid fa-cart-shopping"></i>Ajouter au panier</button>
+      
+      </div>
+      
+    </div>
+    <div class="card-item Variateur" >
+      <div class="card-img">
+      <img class="green-premium" src="premium.svg" alt="Card image cap">
+      <img class="card-item-img" src="PF080604_113x113.PNG" alt="Card image cap">
+    </div>
+      <div class="card-item-body">
+        <h5 class="card-item-type">Variateur</h5>
+          <span class="card-item-ref">ATV12H055M2</span> <br>
+          <span class="card-item-Puissance">Puissance:</span> 
+          <span class="card-item-Puissance-value">0,55Kw</span> <br> 
+          <span class="card-item-prix">prix:</span>
+          <span class="card-item-prix-value">200Dt</span><br>
+        <p class="card-item-text">Altivar ATV12 - variateur de vit. - 0,55kW 0,75CV - 200..240V - 1ph - radiateur
+        </p>
+        <button class="add"><i class="fa-solid fa-cart-shopping"></i>Ajouter au panier</button>
+      
+      </div>
+      
+    </div>
+    <div class="card-item Variateur" >
+      <div class="card-img">
+      <img class="green-premium" src="premium.svg" alt="Card image cap">
+      <img class="card-item-img" src="PF080604_113x113.PNG" alt="Card image cap">
+    </div>
+      <div class="card-item-body">
+        <h5 class="card-item-type">Variateur</h5>
+          <span class="card-item-ref">ATV12H075F1</span> <br>
+          <span class="card-item-Puissance">Puissance:</span> 
+          <span class="card-item-Puissance-value">0,75Kw</span> <br> 
+          <span class="card-item-prix">prix:</span>
+          <span class="card-item-prix-value">200Dt</span><br>
+        <p class="card-item-text">Altivar ATV12 - variateur de vit. - 0,75kW 1CV - 100..120V - 1ph - radiateur
+        </p>
+        <button class="add"><i class="fa-solid fa-cart-shopping"></i>Ajouter au panier</button>
+      
+      </div>
+      
+    </div>
+    <div class="card-item Variateur" >
+      <div class="card-img">
+      <img class="green-premium" src="premium.svg" alt="Card image cap">
+      <img class="card-item-img" src="PF080604_113x113.PNG" alt="Card image cap">
+    </div>
+      <div class="card-item-body">
+        <h5 class="card-item-type">Variateur</h5>
+          <span class="card-item-ref">ATV12HU15M2</span> <br>
+          <span class="card-item-Puissance">Puissance:</span> 
+          <span class="card-item-Puissance-value">1,5Kw</span> <br> 
+          <span class="card-item-prix">prix:</span>
+          <span class="card-item-prix-value">200Dt</span><br>
+        <p class="card-item-text">Altivar ATV12 - variateur de vit. - 1,5kW 2CV - 200..240V - 1ph - radiateur
+        </p>
+        <button class="add"><i class="fa-solid fa-cart-shopping"></i>Ajouter au panier</button>
+      
+      </div>
+      
+    </div>
+    
+    <div class="card-item Variateur" >
+      <div class="card-img">
+      <img class="green-premium" src="premium.svg" alt="Card image cap">
+      <img class="card-item-img" src="PF080604_113x113.PNG" alt="Card image cap">
+    </div>
+      <div class="card-item-body">
+        <h5 class="card-item-type">Variateur</h5>
+          <span class="card-item-ref">ATV12HU15M2</span> <br>
+          <span class="card-item-Puissance">Puissance:</span> 
+          <span class="card-item-Puissance-value">1,5Kw</span> <br> 
+          <span class="card-item-prix">prix:</span>
+          <span class="card-item-prix-value">200Dt</span><br>
+        <p class="card-item-text">Altivar ATV12 - variateur de vit. - 1,5kW 2CV - 200..240V - 1ph - radiateur
+        </p>
+        <button class="add"><i class="fa-solid fa-cart-shopping"></i>Ajouter au panier</button>
+      
+      </div>
+      
+    </div>
+      
+
+    </div>
+   </section>
+
+
+
+<footer id="Contact">
+  <div class="form-title">
+    <p class="subscription-title" data-tpl-xpm="">RECEVOIR DES NOTIFICATIONS PAR E-MAIL&nbsp;: </p>
+    <p class="subscription-subtitle">Obtenez des mises à jour mensuelles de Schneider Electric fournies directement dans votre boîte de réception.</p>
+    <p class="subscription-description">Je souhaite recevoir les actualités et les informations commerciales de Schneider&nbsp;Electric et de ses sociétés affiliées via des moyens de communication électronique comme les emails. j’accepte de partager des informations lors de l'ouverture et lors de clics d'emails et réalisés dans ceux-ci (en utilisant des pixels invisibles dans les images), pour mesurer les performances de nos communications et les améliorer. Pour de plus amples informations, veuillez consulter notre  
+    <a class="se-color-sky-blue" href="">Politique de confidentialité.</a>
+    </p>
+    
+
+    <form action="">
+      
+      <label for="">Email</label>
+      <input type="text" placeholder="exemple@gmail.com" name="" id="">
+      <select clase="se-select" name="" id="">
+        <option value="">Je suis...</option>
+        <option value="Consumer Retailer">Revendeur grand public</option>
+        <option value="Contractor">Installateur</option>
+        <option value="Engineering, Procurement, Construction">Entreprise Général, contractant général</option>
+        <option value="Architect">Architecte</option>
+        <option value="Interior Designer">Architecte d'intérieur</option>
+        <option value="Specifying Consultant or Engineer">Prescripteur / bureau d’études / Ingénierie</option>
+        <option value="E-commerce pure-player">Pure player E-commerce</option>
+        <option value="Electrical Distributor">Distributeur électrique</option>
+        <option value="IT Distributor">Distributeur informatique<option value="IT Distributor">Distributeur informatique</option></option>
+        <option value="Electrician">Électricien</option>
+        <option value="IT Solution Provider">Fournisseur de solutions informatiques</option>
+      </select>
+    <div class="footer-logo">
+<ul class="icons-wrapper">
+  <i class="fa-brands fa-facebook"></i>
+  <i class="fa-brands fa-twitter"></i>
+  <i class="fa-brands fa-youtube"></i>
+  <i class="fa-brands fa-linkedin"></i>
+  <i class="fa-brands fa-instagram"></i>
+</ul>
+    </div>
+      
+      
+  </form>
+</div>
+</footer>
+
+<script src='shopping.js'></script>
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

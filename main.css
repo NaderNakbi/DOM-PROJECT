@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 /*style banner*/
 header{
     display: flex !important;
@@ -52,7 +53,7 @@ padding: 0 10px;
     flex-direction: column;
     align-items: center;
     padding-top: 20px;
-    
+   
 }
 
    .card-groupe{
@@ -60,13 +61,17 @@ padding: 0 10px;
     justify-content: space-between;
     padding: 10px 0px;
    width: 80%;
+  
    }
   .card{
     width: 350px;
+     
+   
   }
   .card:hover{
     box-shadow: 0px 4px 20px rgba(176, 176, 176, 0.311);
-    zoom: 1.02;
+    /*zoom: 1.02;*/
+    transform: scale(1.02);
   }
 .btn{
     background-color: transparent !important;
@@ -104,7 +109,8 @@ padding: 0 10px;
 }
 .card-Produits:hover{
     box-shadow: 0px 4px 20px rgba(176, 176, 176, 0.311);
-    zoom: 1.02;
+    /*zoom: 1.02;*/
+    transform: scale(1.02);
   }
   .card-title{
     text-align: center;
